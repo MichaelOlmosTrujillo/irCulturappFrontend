@@ -1,7 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: 'lato';
+    src: url('./assets/fontFamilyIrCulturapp/Lato/Lato-Black.ttf'),/*Lato-Black.ttf*/
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-BlackItalic.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-Bold.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-BoldItalic.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-Italic.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-Light.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-LightItalic.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-Regular.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-Thin.ttf'),
+        url('./assets/fontFamilyIrculturapp/Lato/Lato-ThinItalic.ttf'),
+}
+
 body{
     background-color: #FFF4DE;
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    font-family: 'Lato';
 }

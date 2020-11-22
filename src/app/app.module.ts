@@ -22,6 +22,7 @@ import { MostrarTodosLosEventosComponent } from './eventos/mostrar-todos-los-eve
 import { ListaTodosLosEventosComponent } from './lista-todos-los-eventos/lista-todos-los-eventos.component';
 import { CarruselComponent } from './carrusel/carrusel.component';
 import { MainComponent } from './main/main.component';
+import { ModalCentrosCulturalesComponent } from './modal-centros-culturales/modal-centros-culturales.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { MainComponent } from './main/main.component';
     MostrarTodosLosEventosComponent,
     ListaTodosLosEventosComponent,
     CarruselComponent,
-    MainComponent
+    MainComponent,
+    ModalCentrosCulturalesComponent
   ],
   imports: [
     BrowserModule,
