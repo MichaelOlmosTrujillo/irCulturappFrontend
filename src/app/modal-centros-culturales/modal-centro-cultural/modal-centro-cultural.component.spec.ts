@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ModalCentroCulturalComponent } from './modal-centro-cultural.component';
 
 describe('ModalCentroCulturalComponent', () => {

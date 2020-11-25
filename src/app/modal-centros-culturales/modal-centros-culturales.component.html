@@ -15,95 +15,33 @@
           <section id="centrosCulturales">
             <h2>Agentes Culturales</h2>
             <div class="row justify-content-center flex-wrap">
-              <div class="card">
-                <a href="#centrosCulturales">
+              <div class="card" *ngFor = "let agenteCultural of listaAgentesCulturales">
+                <a href="#">
+                  <img src="../../assets/images/agentesCulturales/ReinaldoCastro/ReinaldoCastroArtista.jpg" class="card-img-top" alt="ReinaldoCastro">
+                </a>
+
+                <div class="card-body d-flex justify-content-between">
+                  <a href="#">
+                    {{agenteCultural.nombre}} 
+                  </a>
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#sanMiguelStudios">más
+                    info</button>
+                </div>
+              </div>
+              <div class="card" *ngFor = "let agenteCultural of listaAgentesCulturalesGenerales">
+                <a href="#">
                   <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
                 </a>
 
                 <div class="card-body d-flex justify-content-between">
                   <a href="#">
-                    Agente cultural 
+                    {{agenteCultural.nombre}} 
                   </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
+                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural">más
                     info</button>
                 </div>
               </div>
-              <div class="card">
-                <a href="#centrosCulturales">
-                  <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
-                </a>
-
-                <div class="card-body d-flex justify-content-between">
-                  <a href="#">
-                    Agente cultural 
-                  </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
-                    info</button>
-                </div>
-              </div>
-              <div class="card">
-                <a href="#centrosCulturales">
-                  <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
-                </a>
-
-                <div class="card-body d-flex justify-content-between">
-                  <a href="#">
-                    Agente cultural 
-                  </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
-                    info</button>
-                </div>
-              </div>
-              <div class="card">
-                <a href="#centrosCulturales">
-                  <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
-                </a>
-
-                <div class="card-body d-flex justify-content-between">
-                  <a href="#">
-                    Agente cultural 
-                  </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
-                    info</button>
-                </div>
-              </div>
-              <div class="card">
-                <a href="#centrosCulturales">
-                  <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
-                </a>
-
-                <div class="card-body d-flex justify-content-between">
-                  <a href="#">
-                    Agente cultural 
-                  </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
-                    info</button>
-                </div>
-              </div>
-              <div class="card">
-                <a href="#centrosCulturales">
-                  <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body d-flex justify-content-between">
-                  <a href="#">
-                    Agente cultural 
-                  </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
-                    info</button>
-                </div>
-              </div>
-              <div class="card">
-                <a href="#centrosCulturales">
-                  <img src="../../assets/images/centro-cultural.jpg" class="card-img-top" alt="...">
-                </a>
-                <div class="card-body d-flex justify-content-between">
-                  <a href="#">
-                    Agente cultural 
-                  </a>
-                  <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#agenteCultural1">más
-                    info</button>
-                </div>
-              </div>
+              
             </div>
           </section>
           <!-- Fin de la sección de centros culturales -->
@@ -120,3 +58,4 @@
   <!-- Final del modal de centros culturales -->
 
   <app-modal-centro-cultural></app-modal-centro-cultural>
+<app-modal-centro-cultural-generales></app-modal-centro-cultural-generales>
