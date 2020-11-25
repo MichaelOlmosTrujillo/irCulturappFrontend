@@ -9,9 +9,14 @@
 .card:hover {
     transform: scale(1.3);
 }
+.card-body{
+    background-color: #F4C178;
+}
 .card-body a {
     text-decoration: none;
-    color: black;
+    color: #7A3E48;
+    font-family: 'Lato';
+
 }
 .card img {
     width: 220px;

@@ -12,12 +12,13 @@ nav{
 }
 
 .navbar-nav li {
-    margin: 0 5px;
+    margin: 0px 5px;
     cursor: pointer;
 }
 .navbar-nav li a{
     padding: 0 20px;
     cursor: pointer;
+    margin: 10px 3px;
 }
 
 .marginLogo {
