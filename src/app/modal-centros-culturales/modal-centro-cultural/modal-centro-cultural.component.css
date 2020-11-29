@@ -17,3 +17,10 @@ a{
 .modal-body{
     background-color: #FFF4DE;
 }
+.videoCard{
+    max-width: 100%;
+  
+}
+.videoCard iframe{
+    border-radius: 10px;
+}

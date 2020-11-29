@@ -25,7 +25,7 @@ import { MainComponent } from './main/main.component';
 import { ModalCentrosCulturalesComponent } from './modal-centros-culturales/modal-centros-culturales.component';
 import { CentroCulturalComponent } from './centros-culturales/centro-cultural/centro-cultural.component';
 import { ModalCentroCulturalComponent } from './modal-centros-culturales/modal-centro-cultural/modal-centro-cultural.component';
-import { ModalCentroCulturalGeneralesComponent } from './modal-centros-culturales/modal-centro-cultural-generales/modal-centro-cultural-generales.component';
+
 
 @NgModule({
   declarations: [
@@ -50,7 +50,7 @@ import { ModalCentroCulturalGeneralesComponent } from './modal-centros-culturale
     ModalCentrosCulturalesComponent,
     CentroCulturalComponent,
     ModalCentroCulturalComponent,
-    ModalCentroCulturalGeneralesComponent
+    
   ],
   imports: [
     BrowserModule,
