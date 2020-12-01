@@ -82,9 +82,9 @@ function desplegarSanMiguelStudio(){
             </div>
             <div class="videoCard">
               <h6>Producto o servicio</h6>
-              <iframe src="https://www.youtube.com/embed/2UXikyFocxQ" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+              <a href = "https://www.youtube.com/embed/2UXikyFocxQ" target = "_blank">
+MacaLive - ¡Click aquí para verlo! 
+              </a>
 
             </div>
           </div>
