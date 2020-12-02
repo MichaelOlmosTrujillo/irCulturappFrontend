@@ -25,10 +25,10 @@
         <a href="#mapid" class="nav-link">Mapa</a>
       </li>
       <li class="nav-item">
-        <a routerLink="videosEscenarios" class="nav-link">Videos y escenarios</a>
+        <a data-toggle="modal" data-target="#videosEscenarios" class="nav-link">Videos y escenarios</a>
       </li>
-      <li class="nav-item">
-        <a routerLink="merchandising" class="nav-link">Productos y Servicios</a>
+      <li class="nav-item" data-toggle="modal" data-target="#productosServicios">
+        <a class="nav-link">Productos y Servicios</a>
       </li>
       <li class="nav-item">
         <a routerLink="calendario" class="nav-link">Calendario</a>
@@ -56,3 +56,5 @@
 
 
 <app-modal-centros-culturales></app-modal-centros-culturales>
+<app-videos-escenarios></app-videos-escenarios>
+<app-productos-servicios></app-productos-servicios>

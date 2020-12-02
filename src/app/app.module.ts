@@ -25,6 +25,8 @@ import { MainComponent } from './main/main.component';
 import { ModalCentrosCulturalesComponent } from './modal-centros-culturales/modal-centros-culturales.component';
 import { CentroCulturalComponent } from './centros-culturales/centro-cultural/centro-cultural.component';
 import { ModalCentroCulturalComponent } from './modal-centros-culturales/modal-centro-cultural/modal-centro-cultural.component';
+import { ProductosServiciosComponent } from './productos-servicios/productos-servicios.component';
+import { ProductosServiciosPorCadaFrenteComponent } from './productos-servicios/productos-servicios-por-cada-frente/productos-servicios-por-cada-frente.component';
 
 
 @NgModule({
@@ -50,6 +52,8 @@ import { ModalCentroCulturalComponent } from './modal-centros-culturales/modal-c
     ModalCentrosCulturalesComponent,
     CentroCulturalComponent,
     ModalCentroCulturalComponent,
+    ProductosServiciosComponent,
+    ProductosServiciosPorCadaFrenteComponent,
     
   ],
   imports: [

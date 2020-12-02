@@ -80,13 +80,7 @@ function desplegarSanMiguelStudio(){
               <h5>Dirección</h5>
               <p>KRA 147 NO 150 - 26 ETAPA </p>
             </div>
-            <div class="videoCard">
-              <h6>Producto o servicio</h6>
-              <a href = "https://www.youtube.com/embed/2UXikyFocxQ" target = "_blank">
-MacaLive - ¡Click aquí para verlo! 
-              </a>
-
-            </div>
+           
           </div>
         </div>`,
             confirmButtonText: 'Cerrar',

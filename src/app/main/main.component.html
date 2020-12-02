@@ -18,7 +18,7 @@
 
   <div class="card">
     <a href="#mapid">
-      <img src="../../assets/images/mapa.jpg" class="card-img-top" alt="mapa" />
+      <img src="../../assets/images/main/Mapa.jpg" class="card-img-top" alt="mapa" />
     </a>
     <div class="card-body justify-content-center d-flex">
       <a href="#mapid">Mapa</a>
@@ -26,34 +26,36 @@
   </div>
 
   <!-- Card de videos y escenarios -->
-  <div class="card">
+  <div class="card" data-target="#videosEscenarios" data-toggle="modal">
     <a >
-      <img src="../../assets/images/IlustraciónEscenariosyvideosRegistroVisual.jpg" class="card-img-top" alt="escenarios" />
+      <img src="../../assets/images/main/videosEscenarios.jpg" class="card-img-top" alt="escenarios" />
     </a>
 
-    <div class="card-body justify-content-center d-flex">
+    <div class="card-body justify-content-center d-flex" >
       <a>
         Videos y escenarios
       </a>
     </div>
   </div>
+<!-- Modal de los videos y escenarios -->
+<app-videos-escenarios></app-videos-escenarios>
+<!-- Final del Modal de los videos y escenarios -->
+  <!-- Productos y servicios -->
 
-  <!-- Merchandising -->
-
-  <div class="card">
+  <div class="card" data-toggle="modal" data-target="#productosServicios">
     <a>
-      <img src="../../assets/images/Merchandising.jpg" class="card-img-top" alt="merchandising" />
+      <img src="../../assets/images/main/Inverticultura.jpg" class="card-img-top" alt="ProductosServicios" />
     </a>
     <div class="card-body justify-content-center d-flex">
       <a>Productos y servicios</a>
     </div>
   </div>
-
+<app-productos-servicios></app-productos-servicios>
   <!-- Card de calendario -->
 
   <div class="card">
     <a>
-      <img src="../../assets/images/calendario.png" class="card-img-top" alt="calendario" />
+      <img src="../../assets/images/main/Calendario.jpg" class="card-img-top" alt="calendario" />
     </a>
 
     <div class="card-body justify-content-center d-flex">
@@ -67,7 +69,7 @@
 
   <div class="card">
       <a href="#footer">
-          <img src="../../assets/images/informacion.jpg" class="card-img-top" alt="informacion" />
+          <img src="../../assets/images/main/Informacion.jpg" class="card-img-top" alt="informacion" />
       </a>
     <div class="card-body justify-content-center d-flex">
       <a href="#footer">Información</a> 

@@ -30,7 +30,7 @@ const routes: Routes = [
     component: VideosEscenariosComponent,
   },
   {
-    path:'merchandising',
+    path:'productosYservicios',
     component: MerchandisingComponent
   },
   {
