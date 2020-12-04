@@ -51,6 +51,9 @@ export class MapaComponent implements OnInit {
     let escuelaPopularManoAbierta = L.marker([4.7590635, -74.0738686], { icon: mapaIcono }).addTo(mymap);
     let reinaldoCastro = L.marker([4.737955422027326, -74.08757205941103], { icon: mapaIcono }).addTo(mymap);
     let andresJulianAlvarezBernal = L.marker([4.747819565617817, -74.10042975045386], { icon: mapaIcono }).addTo(mymap);
+    let ColectivoQuizaz = L.marker([4.7530902, -74.0980368], { icon: mapaIcono }).addTo(mymap);
+    //let TropasInsurrectas = L.marker([4.741723, -74.0838001], { icon: mapaIcono }).addTo(mymap);
+
     function desplegarSanMiguelStudio() {
       // alert('Funciona el click')
       // console.log(infoMapa);
@@ -195,7 +198,7 @@ export class MapaComponent implements OnInit {
       // console.log(infoMapa);
       Swal.fire(
         {
-          title: 'Reinaldo Castro',
+          title: 'Ruido Sonoro',
           html: ` <div class="card">
           <a href="#">
             <img
@@ -242,12 +245,52 @@ export class MapaComponent implements OnInit {
         }
       );
     }
+
+    function desplegarColectivoQuizaz() {
+      // alert('Funciona el click')
+      // console.log(infoMapa);
+      Swal.fire(
+        {
+          title: 'Colectivo Quizaz',
+          html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/PortadaAgentesCulturales/5LAC.PNG"
+              class="card-img-top" alt="ColectivoQuizaz">
+          </a>
+
+          <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <p> Somos un colectivo de artistas integrales con amplia trayectoria en proyectos, obras, laboratorios y talleres con enfoque social, cultural, pedagógico y artístico. 
+              A partir del Arte y del Juego, creamos experiencias artísticas, significativas y experimentales desde la interdisciplinariedad de los lenguajes artísticos. Nuestros espacios 
+              potencian el desarrollo del ser humano, así como su imaginación, su creatividad, su conocimiento y su pensamiento. Son, además, espacios para el tejido colectivo, para el 
+              encuentro con el otro y consigo mismo. Están dirigidos a niños, niñas, jóvenes y adultos de cualquier edad, desde la gestación y primera infancia, hasta el adulto mayor, a 
+              todo tipo de persona y/o comunidad que tengan o no tengan afición por lo artístico. </p>
+            </div>
+              <div>
+              <h5>Número de contacto</h5>
+              <p>Cel: 3138663383 / 3044705630</p>
+              <h5>Correo Electrónico</h5>
+              <p>siembrandoarboles@gmail.com</p>
+              <h5>Dirección</h5>
+              <p>Calle 151 #109 A - 54</p>
+            </div>
+            
+          </div>
+        </div>`,
+          confirmButtonText: 'Cerrar',
+          background: '#FFF4DE'
+        }
+      );
+    }
+
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
     andresJulianAlvarezBernal.on('click', desplegarAndresJulianAlvarezBernal);
-
-
+    ColectivoQuizaz.on('click', desplegarColectivoQuizaz);
+    
 
 
   }
