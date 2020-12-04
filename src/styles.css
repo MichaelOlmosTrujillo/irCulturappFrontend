@@ -40,11 +40,11 @@ body {
     text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 .mes i{
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     cursor: pointer;
 }
 .mes h1{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 400;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
@@ -60,6 +60,7 @@ body {
     display: flex;
     align-items: center;
     /* justify-content: center; */
+    background-color: #F4C178;
 }
 .diasSemana div{
     font-size: 1.5rem;
@@ -72,6 +73,7 @@ body {
     text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
 }
 .dias{
+    background-color: #3D3342;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +103,20 @@ body {
 .hoy{
     background-color: #167e56;
 }
-
+.modal-footer button{
+    z-index: 1000;
+}
+.posicionAbsoluta{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.posicionRelativa{
+    position: relative;
+}
+.logoEventoAgendario{
+    width: 10px;
+}
 
 
 
