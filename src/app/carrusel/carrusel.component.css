@@ -27,3 +27,23 @@
     width: 100%;
     max-width: 100%;
 }
+.posicionRelativa{
+    position: relative;
+}
+.posicionAbsoluta{
+    position: absolute;
+    left: 43%;
+    top: 75%;
+    width: 200px;
+    border-radius: 10px;
+    background-color: #3d3342cc;
+    color: rgb(202, 136, 49);
+    text-decoration: none;
+    text-align: center;
+    align-self: center;
+    padding: auto 5px;
+    max-width: 100%;
+}
+.posicionAbsoluta:hover{
+  background-color: #3D3342;
+}
