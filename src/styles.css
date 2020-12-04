@@ -110,12 +110,13 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
+    z-index: 1000;
 }
 .posicionRelativa{
     position: relative;
 }
 .logoEventoAgendario{
-    width: 10px;
+    width: 20px;
 }
 
 

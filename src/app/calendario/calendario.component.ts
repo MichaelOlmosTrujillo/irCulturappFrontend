@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 @Component({
   selector: 'app-calendario',
   templateUrl: './calendario.component.html',
@@ -94,10 +94,11 @@ export class CalendarioComponent implements OnInit {
         (i === new Date().getDate() || i === (new Date().getDate()) + 1 ) &&
         this.fecha.getMonth() === new Date().getMonth()
       ) {
-        dias += `<div class = "hoy posicionRelativa">
+        dias += `
+        <div class = "hoy posicionRelativa">
         ${i}
-        <div class = posicionAbsoluta>
-            1
+        <div data-toggle= "modal" data-target = "#evento5Dic" class = "posicionAbsoluta">
+           <img src="../../assets/images/logo/logo-mapa-03.png" class="logoEventoAgendario" alt="logoEventoAgendario">
         </div>
         </div>
         `;
@@ -107,14 +108,7 @@ export class CalendarioComponent implements OnInit {
         </div>
         `;
       }
-      //     if (i === 5) {
-      //         dias += `<div class = posicionRelativa >
-      // ${i}
-      // <div class = posicionAbsoluta>
-      //     1
-      // </div>
-      // </div>`;
-      //     }
+      
     }
 
     //Últimos días del mes actual
@@ -143,4 +137,5 @@ export class CalendarioComponent implements OnInit {
     this.fecha.setMonth(this.fecha.getMonth() + 1);
     this.renderizarCalendario();
   }
+ 
 }
