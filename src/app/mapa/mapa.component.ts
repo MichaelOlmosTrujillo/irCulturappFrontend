@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import Swal from 'sweetalert2/dist/sweetalert2.js';  
+import Swal from 'sweetalert2/dist/sweetalert2.js';
 
 declare let L;
 @Component({
@@ -8,56 +8,56 @@ declare let L;
   styleUrls: ['./mapa.component.css']
 })
 export class MapaComponent implements OnInit {
-    
+
   constructor() {
-    
-   }
+
+  }
 
   ngOnInit(): void {
     let botonCerrarInfo = document.getElementById("botonCerrarInfo");
     var mymap = L.map('mapid').setView([4.7652, -74.0824], 12);
     L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-    attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-    maxZoom: 18,
-    id: 'mapbox/streets-v11',
-    tileSize: 512,
-    zoomOffset: -1,
-    accessToken: 'pk.eyJ1IjoibWljaGFlbG9sbW9zdHJ1amlsbG8iLCJhIjoiY2tneWNyOXdhMGNqaTJ1bXNjZ2cxendoYiJ9.bCeZFg_DZa2f9kLkrj9bTw'
-}).addTo(mymap);
-var mapaIcono = L.icon({
-    iconUrl:'../../assets/images/logo/logo mapa-03.png',
-    // shadowUrl:'./images/mapa/leaf-shadow.png',
-    iconSize: [40,45],
-    shadowSize:[50,64],
-    iconAnchor:[22,94], // point of the icon which will correspond to marker's location
-    shadowAnchor: [4, 62], // point of the shadow which will correspond to marker's location
-    popupAnchor: [-3, -76]
-})
-var sanMiguelStudio = L.marker([4.7569948, -74.1176255], {icon:mapaIcono}).addTo(mymap);
-var mapaIcon = L.Icon.extend({
-    options:{
+      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+      maxZoom: 18,
+      id: 'mapbox/streets-v11',
+      tileSize: 512,
+      zoomOffset: -1,
+      accessToken: 'pk.eyJ1IjoibWljaGFlbG9sbW9zdHJ1amlsbG8iLCJhIjoiY2tneWNyOXdhMGNqaTJ1bXNjZ2cxendoYiJ9.bCeZFg_DZa2f9kLkrj9bTw'
+    }).addTo(mymap);
+    var mapaIcono = L.icon({
+      iconUrl: '../../assets/images/logo/logo-mapa-03.png',
+      // shadowUrl:'./images/mapa/leaf-shadow.png',
+      iconSize: [40, 45],
+      shadowSize: [50, 64],
+      iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
+      shadowAnchor: [4, 62], // point of the shadow which will correspond to marker's location
+      popupAnchor: [-3, -76]
+    })
+    var sanMiguelStudio = L.marker([4.7569948, -74.1176255], { icon: mapaIcono }).addTo(mymap);
+    var mapaIcon = L.Icon.extend({
+      options: {
         // shadowUrl: './images/mapa/leaf-shadow.png',
-        iconSize: [60,90],
-        shadowSize: [50,64],
-        iconAnchor: [22,94],
-        shadowAnchor:[4,62],
-        popupAnchor:[-3, -76]
-    }
-})
-L.icon = function (opciones){
-    return new L.Icon(opciones);
-};
+        iconSize: [60, 90],
+        shadowSize: [50, 64],
+        iconAnchor: [22, 94],
+        shadowAnchor: [4, 62],
+        popupAnchor: [-3, -76]
+      }
+    })
+    L.icon = function (opciones) {
+      return new L.Icon(opciones);
+    };
 
- let escuelaPopularManoAbierta = L.marker([4.7590635, -74.0738686], {icon: mapaIcono}).addTo(mymap);
- let reinaldoCastro = L.marker([4.737955422027326, -74.08757205941103], {icon:mapaIcono}).addTo(mymap);
- let andresJulianAlvarezBernal = L.marker([4.747819565617817, -74.10042975045386], {icon:mapaIcono}).addTo(mymap);
-function desplegarSanMiguelStudio(){
-    // alert('Funciona el click')
-    // console.log(infoMapa);
-    Swal.fire(
+    let escuelaPopularManoAbierta = L.marker([4.7590635, -74.0738686], { icon: mapaIcono }).addTo(mymap);
+    let reinaldoCastro = L.marker([4.737955422027326, -74.08757205941103], { icon: mapaIcono }).addTo(mymap);
+    let andresJulianAlvarezBernal = L.marker([4.747819565617817, -74.10042975045386], { icon: mapaIcono }).addTo(mymap);
+    function desplegarSanMiguelStudio() {
+      // alert('Funciona el click')
+      // console.log(infoMapa);
+      Swal.fire(
         {
-            title: 'San Miguel Studio',
-            html: `<div class="card">
+          title: 'San Miguel Studio',
+          html: `<div class="card">
           <a href="#">
             <img src="../../../assets/images/agentesCulturales/SanMiguel/TomasSanmiguelLogo.jpg" class="card-img-top"
               alt="ReinaldoCastro">
@@ -83,20 +83,20 @@ function desplegarSanMiguelStudio(){
            
           </div>
         </div>`,
-            confirmButtonText: 'Cerrar',
-            background: '#FFF4DE'
+          confirmButtonText: 'Cerrar',
+          background: '#FFF4DE'
 
         }
-    );
-}
+      );
+    }
 
-function desplegarEscuelaPopularManoAbierta(){
-    // alert('Funciona el click')
-    // console.log(infoMapa);
-    Swal.fire(
+    function desplegarEscuelaPopularManoAbierta() {
+      // alert('Funciona el click')
+      // console.log(infoMapa);
+      Swal.fire(
         {
-            title: 'Escuela Popular Mano Abierta',
-            html: `<div class="card">
+          title: 'Escuela Popular Mano Abierta',
+          html: `<div class="card">
           <a href="#">
             <img
               src="../../../assets/images/agentesCulturales/EscuelaPopularManoAbierta/EscuelaPopularManoAbiertaModificada.jpg"
@@ -130,19 +130,19 @@ function desplegarEscuelaPopularManoAbierta(){
             
           </div>
         </div>`,
-            confirmButtonText: 'Cerrar',
-            background: '#FFF4DE'
+          confirmButtonText: 'Cerrar',
+          background: '#FFF4DE'
         }
-    );
-}
+      );
+    }
 
-function desplegarReinaldoCastro(){
-    // alert('Funciona el click')
-    // console.log(infoMapa);
-    Swal.fire(
+    function desplegarReinaldoCastro() {
+      // alert('Funciona el click')
+      // console.log(infoMapa);
+      Swal.fire(
         {
-            title: 'Reinaldo Castro',
-            html: `<div class="card">
+          title: 'Reinaldo Castro',
+          html: `<div class="card">
           <a href="#">
             <img
               src="../../../assets/images/agentesCulturales/ReinaldoCastro/ReinaldoCastroLogoReinaldoCastroArtista.jpg"
@@ -184,19 +184,19 @@ function desplegarReinaldoCastro(){
             
           </div>
         </div>`,
-            confirmButtonText: 'Cerrar',
-            background: '#FFF4DE'
+          confirmButtonText: 'Cerrar',
+          background: '#FFF4DE'
         }
-    );
-}
+      );
+    }
 
-function desplegarAndresJulianAlvarezBernal(){
-    // alert('Funciona el click')
-    // console.log(infoMapa);
-    Swal.fire(
+    function desplegarAndresJulianAlvarezBernal() {
+      // alert('Funciona el click')
+      // console.log(infoMapa);
+      Swal.fire(
         {
-            title: 'Reinaldo Castro',
-            html: ` <div class="card">
+          title: 'Reinaldo Castro',
+          html: ` <div class="card">
           <a href="#">
             <img
               src="../../../assets/images/agentesCulturales/TARJETARUIDOSONOROJulianAlvarez/TARJETARUIDOSONOROJulianAlvarezModificada.jpg"
@@ -237,19 +237,19 @@ function desplegarAndresJulianAlvarezBernal(){
             
           </div>
         </div>`,
-            confirmButtonText: 'Cerrar',
-            background: '#FFF4DE'
+          confirmButtonText: 'Cerrar',
+          background: '#FFF4DE'
         }
-    );
-}
- sanMiguelStudio.on('click',desplegarSanMiguelStudio);
- escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
-reinaldoCastro.on('click', desplegarReinaldoCastro);
-andresJulianAlvarezBernal.on('click', desplegarAndresJulianAlvarezBernal);
+      );
+    }
+    sanMiguelStudio.on('click', desplegarSanMiguelStudio);
+    escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
+    reinaldoCastro.on('click', desplegarReinaldoCastro);
+    andresJulianAlvarezBernal.on('click', desplegarAndresJulianAlvarezBernal);
 
 
 
 
-}
+  }
 
 }

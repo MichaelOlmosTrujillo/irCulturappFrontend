@@ -11,11 +11,11 @@ a{
     background-color: #F4C178;
 }
 .card-body{
-    background-color: #FFF4DE;
+    background-color: #ffffff;
     text-align: center;
 }
 .modal-body{
-    background-color: #FFF4DE;
+    background-color: rgb(240, 210, 150);
 }
 .videoCard{
     max-width: 100%;

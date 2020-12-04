@@ -1,103 +1,41 @@
-  <!-- Modal de centros culturales -->
-  <div class="modal fade " id="productosServicios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-xl modal-dialog-scrollable">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Frentes Culturales</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div class="modal-body">
+<!-- Modal de centros culturales -->
+<div class="modal fade " id="productosServicios" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-xl modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">InvertiCultura</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
 
-          <!-- Frentes Culturales -->
-          <section id="centrosCulturales">
+        <!-- Frentes Culturales -->
+        <section id="centrosCulturales">
 
-            <div class="row justify-content-center flex-wrap ">
-              <!-- Frente Cultural de Medio Ambiente -->
-              <div class="card" style="width: 18rem;">
-                <div class="card-body card-bodyMedioAmbiente">
-                  <h5 class="card-title">Medio Ambiente</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados al Medio Ambiente</h6>
+          <div class="row justify-content-center flex-wrap ">
 
-                  <a href="#" class="card-link">Click aquí</a>
-
-                </div>
+            <!-- Frente Cultural de Medios de Comunicación -->
+            <div class="card" style="width: 18rem;">
+              <div class="card-body">
+                <h5 class="card-title">Medios de Comunicación</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados a los Medios de
+                  Comunicación</h6>
+                <a data-toggle="modal" data-target="#mediosComunicacion" class="card-link">Click aquí</a>
               </div>
-              <!-- Frente Cultural de Medios de Comunicación -->
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Medios de Comunicación</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados a los Medios de
-                    Comunicación</h6>
-
-                  <a href="#" class="card-link">Click aquí</a>
-
-                </div>
-              </div>
-              <!-- Fin del agente cultural Escuela Popular Mano Abierta -->
-
-              <!-- Frente Cultural de Bibliotecas y clubes literarios -->
-              <div class="card" style="width: 18rem;">
-                <div class="card-body card-bibliotecasMR">
-                  <h5 class="card-title">Bibliotecas y Medios
-                    Relacionados</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados a Bibliotecas y Medios
-                    Relacionados</h6>
-
-                  <a href="#" class="card-link">Click aquí</a>
-
-                </div>
-              </div>
-              <!-- Fin del agente cultural Reinaldo Castro -->
-              <!-- Frente Cultural Artes escénicas, dancísticas y culturales -->
-              <div class="card" style="width: 18rem;">
-                <div class="card-body card-artesEscenicas">
-                  <h5 class="card-title">Artes Escénicas
-                    Dancísticas y Culturales</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados a Artes Escénicas
-                    Dancísticas y Culturales</h6>
-
-                  <a href="#" class="card-link">Click aquí</a>
-
-                </div>
-              </div>
-              <!-- Fin del Frente cultural Artes Escénicas-dancísticas y -->
-              <!-- Frente cultural de lenguajes artísticos interdisciplinares -->
-              <div class="card" style="width: 18rem;">
-                <div class="card-body card-lenguajesArtisticos">
-                  <h5 class="card-title">Lenguajes Artísticos e interdisciplinares</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados a los Lenguajes Artísticos
-                    e interdisciplinares</h6>
-
-                  <a href="#" class="card-link">Click aquí</a>
-
-                </div>
-              </div>
-              <!-- Fin del Frente cultural de lenguajes artísticos interdisciplinares -->
-
-              <!-- Frente Cultural de los Centros y Organizaciones Comunitarios -->
-              <div class="card" style="width: 18rem;">
-                <div class="card-body">
-                  <h5 class="card-title">Centros y Organizaciones Comunitarios</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Videos y escenarios relacionados a los Centros y Organizaciones Comunitarios</h6>
-
-                  <a href="#" class="card-link">Click aquí</a>
-
-                </div>
-              </div>
-              <!-- Fin Frente Cultural de los Centros y Organizaciones Comunitarios -->
             </div>
-          </section>
-          <!-- Fin de la sección de centros culturales -->
-        </div>
+          </div>
+        </section>
+        <!-- Fin de la sección de centros culturales -->
+      </div>
 
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-          <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
-        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+        <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
       </div>
     </div>
   </div>
+</div>
+<app-productos-servicios-por-cada-frente></app-productos-servicios-por-cada-frente>
 
-  <!-- Final del modal de centros culturales -->
+<!-- Final del modal de centros culturales -->

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .modal-body{
     max-width: 100%;
 }
@@ -99,3 +100,11 @@
 */
 
 
+=======
+.collapse-content .fa.fa-heart:hover {
+  color: #f44336 !important;
+}
+.collapse-content .fa.fa-share-alt:hover {
+  color: #0d47a1 !important;
+}
+>>>>>>> d661a2629e1da138b386398a37cf9fa91fc44f21

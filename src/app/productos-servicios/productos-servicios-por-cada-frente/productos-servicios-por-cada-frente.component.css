@@ -1,0 +1,27 @@
+a{
+    text-decoration: none;
+    color: #7A3E48;
+    margin: 5px;
+}
+.modal-footer button{
+     background-color: #3D3342;
+    color: rgb(202, 136, 49);
+}
+.modal-header{
+    background-color: #F4C178;
+}
+.card-body{
+    background-color: #ffffff;
+    text-align: center;
+}
+.modal-body{
+    background-color: rgb(240, 210, 150);
+}
+.videoCard{
+    max-width: 100%;
+  
+}
+.videoCard iframe{
+    border-radius: 10px;
+    max-width: 100%;
+}
