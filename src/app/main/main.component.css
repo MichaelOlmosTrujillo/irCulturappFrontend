@@ -5,6 +5,7 @@
     height: 200px;
     transition: transform 1s;
     margin: 30px;
+    
 }
 .card:hover {
     transform: scale(1.3);
