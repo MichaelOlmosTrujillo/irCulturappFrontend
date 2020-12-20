@@ -5,25 +5,27 @@ declare let L;
 @Component({
   selector: 'app-mapa',
   templateUrl: './mapa.component.html',
-  styleUrls: ['./mapa.component.css']
+  styleUrls: ['./mapa.component.css'],
 })
 export class MapaComponent implements OnInit {
-
-  constructor() {
-
-  }
+  constructor() {}
 
   ngOnInit(): void {
-    let botonCerrarInfo = document.getElementById("botonCerrarInfo");
+    let botonCerrarInfo = document.getElementById('botonCerrarInfo');
     var mymap = L.map('mapid').setView([4.7652, -74.0824], 12);
-    L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
-      attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: 'mapbox/streets-v11',
-      tileSize: 512,
-      zoomOffset: -1,
-      accessToken: 'pk.eyJ1IjoibWljaGFlbG9sbW9zdHJ1amlsbG8iLCJhIjoiY2tneWNyOXdhMGNqaTJ1bXNjZ2cxendoYiJ9.bCeZFg_DZa2f9kLkrj9bTw'
-    }).addTo(mymap);
+    L.tileLayer(
+      'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
+      {
+        attribution:
+          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: 'mapbox/streets-v11',
+        tileSize: 512,
+        zoomOffset: -1,
+        accessToken:
+          'pk.eyJ1IjoibWljaGFlbG9sbW9zdHJ1amlsbG8iLCJhIjoiY2tneWNyOXdhMGNqaTJ1bXNjZ2cxendoYiJ9.bCeZFg_DZa2f9kLkrj9bTw',
+      }
+    ).addTo(mymap);
     var mapaIcono = L.icon({
       iconUrl: '../../assets/images/logo/logo-mapa-03.png',
       // shadowUrl:'./images/mapa/leaf-shadow.png',
@@ -31,9 +33,11 @@ export class MapaComponent implements OnInit {
       shadowSize: [50, 64],
       iconAnchor: [22, 94], // point of the icon which will correspond to marker's location
       shadowAnchor: [4, 62], // point of the shadow which will correspond to marker's location
-      popupAnchor: [-3, -76]
-    })
-    var sanMiguelStudio = L.marker([4.7569948, -74.1176255], { icon: mapaIcono }).addTo(mymap);
+      popupAnchor: [-3, -76],
+    });
+    var sanMiguelStudio = L.marker([4.7569948, -74.1176255], {
+      icon: mapaIcono,
+    }).addTo(mymap);
     var mapaIcon = L.Icon.extend({
       options: {
         // shadowUrl: './images/mapa/leaf-shadow.png',
@@ -41,26 +45,37 @@ export class MapaComponent implements OnInit {
         shadowSize: [50, 64],
         iconAnchor: [22, 94],
         shadowAnchor: [4, 62],
-        popupAnchor: [-3, -76]
-      }
-    })
+        popupAnchor: [-3, -76],
+      },
+    });
     L.icon = function (opciones) {
       return new L.Icon(opciones);
     };
 
-    let escuelaPopularManoAbierta = L.marker([4.7590635, -74.0738686], { icon: mapaIcono }).addTo(mymap);
-    let reinaldoCastro = L.marker([4.737955422027326, -74.08757205941103], { icon: mapaIcono }).addTo(mymap);
-    let andresJulianAlvarezBernal = L.marker([4.747819565617817, -74.10042975045386], { icon: mapaIcono }).addTo(mymap);
-    let ColectivoQuizaz = L.marker([4.7530902, -74.0980368], { icon: mapaIcono }).addTo(mymap);
+    let escuelaPopularManoAbierta = L.marker([4.7590635, -74.0738686], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    let reinaldoCastro = L.marker([4.737955422027326, -74.08757205941103], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    let andresJulianAlvarezBernal = L.marker(
+      [4.747819565617817, -74.10042975045386],
+      { icon: mapaIcono }
+    ).addTo(mymap);
+    let ColectivoQuizaz = L.marker([4.7530902, -74.0980368], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    let oneirosLaboratorio = L.marker([4.741845499466957, -74.08318357452974], {
+      icon: mapaIcono,
+    }).addTo(mymap);
     //let TropasInsurrectas = L.marker([4.741723, -74.0838001], { icon: mapaIcono }).addTo(mymap);
 
     function desplegarSanMiguelStudio() {
       // alert('Funciona el click')
       // console.log(infoMapa);
-      Swal.fire(
-        {
-          title: 'San Miguel Studio',
-          html: `<div class="card">
+      Swal.fire({
+        title: 'San Miguel Studio',
+        html: `<div class="card">
           <a href="#">
             <img src="../../../assets/images/agentesCulturales/SanMiguel/TomasSanmiguelLogo.jpg" class="card-img-top"
               alt="ReinaldoCastro">
@@ -86,20 +101,17 @@ export class MapaComponent implements OnInit {
            
           </div>
         </div>`,
-          confirmButtonText: 'Cerrar',
-          background: '#FFF4DE'
-
-        }
-      );
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
     }
 
     function desplegarEscuelaPopularManoAbierta() {
       // alert('Funciona el click')
       // console.log(infoMapa);
-      Swal.fire(
-        {
-          title: 'Escuela Popular Mano Abierta',
-          html: `<div class="card">
+      Swal.fire({
+        title: 'Escuela Popular Mano Abierta',
+        html: `<div class="card">
           <a href="#">
             <img
               src="../../../assets/images/agentesCulturales/EscuelaPopularManoAbierta/EscuelaPopularManoAbiertaModificada.jpg"
@@ -133,19 +145,17 @@ export class MapaComponent implements OnInit {
             
           </div>
         </div>`,
-          confirmButtonText: 'Cerrar',
-          background: '#FFF4DE'
-        }
-      );
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
     }
 
     function desplegarReinaldoCastro() {
       // alert('Funciona el click')
       // console.log(infoMapa);
-      Swal.fire(
-        {
-          title: 'Reinaldo Castro',
-          html: `<div class="card">
+      Swal.fire({
+        title: 'Reinaldo Castro',
+        html: `<div class="card">
           <a href="#">
             <img
               src="../../../assets/images/agentesCulturales/ReinaldoCastro/ReinaldoCastroLogoReinaldoCastroArtista.jpg"
@@ -187,19 +197,17 @@ export class MapaComponent implements OnInit {
             
           </div>
         </div>`,
-          confirmButtonText: 'Cerrar',
-          background: '#FFF4DE'
-        }
-      );
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
     }
 
     function desplegarAndresJulianAlvarezBernal() {
       // alert('Funciona el click')
       // console.log(infoMapa);
-      Swal.fire(
-        {
-          title: 'Ruido Sonoro',
-          html: ` <div class="card">
+      Swal.fire({
+        title: 'Ruido Sonoro',
+        html: ` <div class="card">
           <a href="#">
             <img
               src="../../../assets/images/agentesCulturales/TARJETARUIDOSONOROJulianAlvarez/TARJETARUIDOSONOROJulianAlvarezModificada.jpg"
@@ -240,19 +248,17 @@ export class MapaComponent implements OnInit {
             
           </div>
         </div>`,
-          confirmButtonText: 'Cerrar',
-          background: '#FFF4DE'
-        }
-      );
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
     }
 
     function desplegarColectivoQuizaz() {
       // alert('Funciona el click')
       // console.log(infoMapa);
-      Swal.fire(
-        {
-          title: 'Colectivo Quizaz',
-          html: `<div class="card">
+      Swal.fire({
+        title: 'Colectivo Quizaz',
+        html: `<div class="card">
           <a href="#">
             <img
               src="../../assets/images/agentesCulturales/PortadaAgentesCulturales/5LAC.PNG"
@@ -278,21 +284,57 @@ export class MapaComponent implements OnInit {
             
           </div>
         </div>`,
-          confirmButtonText: 'Cerrar',
-          background: '#FFF4DE'
-        }
-      );
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
     }
 
+    function desplegarOneirosLaboratorio() {
+      Swal.fire({
+        title: 'Oneiros Laboratorio',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/OneirosLaboratorio/IMAGOTIPOONEIROS-OneirosLaboratorio.jpg"
+              class="card-img-top" alt="OneirosLaboratorios">
+          </a>
+
+           <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              
+              <p>Oneiros Laboratorio es un grupo artístico interdisciplinar de la localidad de Suba, que se interesa en la creación y experimentación de diversos lenguajes artísticos, enfocados en la creación de contenidos para primera infancia, infancia y otros públicos. </p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.instagram.com/oneiroslaboratorio/">
+                  <i class="fab fa-instagram"></i> 
+                </a>
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 3103097339 <br> Cel: 3223262787</p>
+              <h5>Correo Electrónico:</h5>
+              <p>viajeaoneiros@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>cra 121 # 128 b 21 int 117 apto 602</p>
+              <h5>Dirección artística</h5>
+              <p>Cra. 90 #147-44  Casa de la Cultura de Suba</p>
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
 
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
     andresJulianAlvarezBernal.on('click', desplegarAndresJulianAlvarezBernal);
     ColectivoQuizaz.on('click', desplegarColectivoQuizaz);
-    
-
-
+    oneirosLaboratorio.on('click', desplegarOneirosLaboratorio);
   }
-
 }
