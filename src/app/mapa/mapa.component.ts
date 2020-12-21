@@ -68,6 +68,17 @@ export class MapaComponent implements OnInit {
     let oneirosLaboratorio = L.marker([4.741845499466957, -74.08318357452974], {
       icon: mapaIcono,
     }).addTo(mymap);
+    let tejedoresDevida = L.marker([4.734404594574592, -74.10588451723903], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+let danielArismendi = L.marker([4.741984383637213, -74.09662191723899],{
+  icon: mapaIcono,
+}).addTo(mymap);
+
+let fundacionActitudColombia = L.marker([4.748404452802043, -74.08367464792542], {
+  icon: mapaIcono,
+}).addTo(mymap);
+    
     //let TropasInsurrectas = L.marker([4.741723, -74.0838001], { icon: mapaIcono }).addTo(mymap);
 
     function desplegarSanMiguelStudio() {
@@ -330,11 +341,139 @@ export class MapaComponent implements OnInit {
       });
     }
 
+     function desplegarTejedoresDeVida() {
+      Swal.fire({
+        title: 'Tejedores de vida',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/tejedoresDeVida/tejedoresMabelMora.png"
+              class="card-img-top" alt="OneirosLaboratorios">
+          </a>
+
+           <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              
+              <p>Agrupación Tejedores de vida reúne varios lenguajes artísticos para la resignificación del territorio y la construcciòn colectiva  </p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.facebook.com/AgrupacionTejedoresDeVida" target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 3194902803 </p>
+              <h5>Correo Electrónico:</h5>
+              <p>devidatejedores@gmail.com </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>carrera 121c #129d - 24</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Cra. 90 #147-44  Casa de la Cultura de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+     function desplegarDanielArismendi() {
+      Swal.fire({
+        title: 'Daniel Arismendi',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/danielArismendi/danielArismendi.jpeg"
+              class="card-img-top" alt="danielArismendi">
+          </a>
+
+            <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              
+              <p>Fotos</p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.instagram.com/daab36/"  target="_blank">
+                  <!-- <i class="fab fa-facebook"></i>  -->
+                  <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 3115589794 </p>
+              <h5>Correo Electrónico:</h5>
+              <p>dab36@gmail.com </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Cra 103CBis # 139 - 43</p>
+              <h5>Dirección artística</h5>
+              <p>Virtualidad </p>
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarFundacionActitudColombia() {
+      Swal.fire({
+        title: 'Fundación Actitud Colombia',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/fundacionActitudColombia/FundacionActitudColombia.jpg"
+              class="card-img-top" alt="fundacionActitudColombia">
+          </a>
+
+             <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              
+              <p>Varios</p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.facebook.com/ActitudColombia"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                  <!-- <i class="fab fa-instagram"></i> -->
+                </a>
+            </div>
+            <div>
+              <!-- <h5>Número de contacto:</h5>
+              <p>Cel: 3115589794 </p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>actitudfundacion@gmail.com </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 150 No. 92-20</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Virtualidad </p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
     andresJulianAlvarezBernal.on('click', desplegarAndresJulianAlvarezBernal);
     ColectivoQuizaz.on('click', desplegarColectivoQuizaz);
     oneirosLaboratorio.on('click', desplegarOneirosLaboratorio);
+    tejedoresDevida.on('click', desplegarTejedoresDeVida);
+    danielArismendi.on('click', desplegarDanielArismendi);
+    fundacionActitudColombia.on('click', desplegarFundacionActitudColombia);
   }
 }
