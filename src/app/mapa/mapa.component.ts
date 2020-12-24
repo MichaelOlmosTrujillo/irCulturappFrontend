@@ -78,6 +78,10 @@ let danielArismendi = L.marker([4.741984383637213, -74.09662191723899],{
 let fundacionActitudColombia = L.marker([4.748404452802043, -74.08367464792542], {
   icon: mapaIcono,
 }).addTo(mymap);
+
+let bibliotecaComunitariaElfuerteViejoTopo = L.marker([4.733328033767939, -74.09535177452982], {
+  icon: mapaIcono,
+}).addTo(mymap);
     
     //let TropasInsurrectas = L.marker([4.741723, -74.0838001], { icon: mapaIcono }).addTo(mymap);
 
@@ -466,6 +470,52 @@ let fundacionActitudColombia = L.marker([4.748404452802043, -74.08367464792542],
       });
     }
 
+    function desplegarBlibliotecaComunitariaElFuerteViejoTopo() {
+      Swal.fire({
+        title: 'Bliblioteca Comunitaria El Fuerte Viejo Topo',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/15IDAC.PNG"
+              class="card-img-top" alt="BlibliotecaComunitariaElFuerteViejoTopo">
+          </a>
+
+             <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Somos una biblioteca comunitaria ubicada en Aures I, desde donde promovemos la lectura y escritura, buscando potenciar los ejercicios creativos; de la misma forma impulsamos a través de procesos educativos, artísticos y culturales la construcción de comunidad, la participación y la defensa del territorio.</p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.facebook.com/elfuertedelviejotopo"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/bibliotecaelviejotopo/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 314 3273 266 </p>
+              <p>Cel: 317 3122 814</p>
+              <h5>Correo Electrónico:</h5>
+              <p>bibliotecaviejotopo@gmail.com </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 131a #100 24</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Virtualidad </p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
@@ -475,5 +525,6 @@ let fundacionActitudColombia = L.marker([4.748404452802043, -74.08367464792542],
     tejedoresDevida.on('click', desplegarTejedoresDeVida);
     danielArismendi.on('click', desplegarDanielArismendi);
     fundacionActitudColombia.on('click', desplegarFundacionActitudColombia);
+    bibliotecaComunitariaElfuerteViejoTopo.on('click', desplegarBlibliotecaComunitariaElFuerteViejoTopo);
   }
 }

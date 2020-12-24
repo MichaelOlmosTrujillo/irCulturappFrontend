@@ -15,6 +15,7 @@
     height: 200px;
     transition: transform 1s;
     margin: 30px;
+    
 }
 .card:hover {
     transform: scale(1.2);
@@ -35,6 +36,9 @@ width: 70px;
 height: 20px;
 display: flex;
 align-items: center;
+margin: 0px 3px;
+padding: 0px 3px;
+justify-content: center;
 }
 .card-body button:hover{
     background-color: #da8906;
