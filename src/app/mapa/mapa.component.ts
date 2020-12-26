@@ -71,18 +71,40 @@ export class MapaComponent implements OnInit {
     let tejedoresDevida = L.marker([4.734404594574592, -74.10588451723903], {
       icon: mapaIcono,
     }).addTo(mymap);
-let danielArismendi = L.marker([4.741984383637213, -74.09662191723899],{
-  icon: mapaIcono,
-}).addTo(mymap);
+    let danielArismendi = L.marker([4.741984383637213, -74.09662191723899], {
+      icon: mapaIcono,
+    }).addTo(mymap);
 
-let fundacionActitudColombia = L.marker([4.748404452802043, -74.08367464792542], {
-  icon: mapaIcono,
-}).addTo(mymap);
+    let fundacionActitudColombia = L.marker(
+      [4.748404452802043, -74.08367464792542],
+      {
+        icon: mapaIcono,
+      }
+    ).addTo(mymap);
 
-let bibliotecaComunitariaElfuerteViejoTopo = L.marker([4.733328033767939, -74.09535177452982], {
-  icon: mapaIcono,
-}).addTo(mymap);
-    
+    let bibliotecaComunitariaElfuerteViejoTopo = L.marker(
+      [4.733328033767939, -74.09535177452982],
+      {
+        icon: mapaIcono,
+      }
+    ).addTo(mymap);
+
+    let configurArte = L.marker([4.752579927494557, -74.09786253220179], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+    let agrupacionExpresiones = L.marker([4.755806534539646, -74.08852775918581], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+    let mesaArtistasSuba = L.marker([4.740776023478104, -74.08358453220181], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+
+    let danielPoveda = L.marker([4.720873409605346, -74.04758733077912], {
+      icon: mapaIcono,
+    }).addTo(mymap);
     //let TropasInsurrectas = L.marker([4.741723, -74.0838001], { icon: mapaIcono }).addTo(mymap);
 
     function desplegarSanMiguelStudio() {
@@ -345,7 +367,7 @@ let bibliotecaComunitariaElfuerteViejoTopo = L.marker([4.733328033767939, -74.09
       });
     }
 
-     function desplegarTejedoresDeVida() {
+    function desplegarTejedoresDeVida() {
       Swal.fire({
         title: 'Tejedores de vida',
         html: `<div class="card">
@@ -386,7 +408,7 @@ let bibliotecaComunitariaElfuerteViejoTopo = L.marker([4.733328033767939, -74.09
       });
     }
 
-     function desplegarDanielArismendi() {
+    function desplegarDanielArismendi() {
       Swal.fire({
         title: 'Daniel Arismendi',
         html: `<div class="card">
@@ -516,6 +538,192 @@ let bibliotecaComunitariaElfuerteViejoTopo = L.marker([4.733328033767939, -74.09
       });
     }
 
+    function desplegarConfigurArte() {
+      Swal.fire({
+        title: 'ConfigurArte',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/16IDAC.PNG"
+              class="card-img-top" alt="configurarte">
+          </a>
+
+             <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>"ConfigurArte es una agrupación en donde se fusionan varios lenguajes artísticos, para generar procesos artísticos y culturales con diferentes grupos etarios (primera infancia, infancia, adulto mayor). 
+
+"</p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://web.facebook.com/ConfigurArte"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/bibliotecaelviejotopo/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <!-- <h5>Número de contacto:</h5>
+              <p>Cel: 314 3273 266 </p>
+              <p>Cel: 317 3122 814</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>configurarte1227@gmail.com  </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 151 #109 A - 52</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Virtualidad </p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarAgrupacionExpresiones() {
+      Swal.fire({
+        title: 'ConfigurArte',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/17IDAC.PNG"
+              class="card-img-top" alt="agrupacionExpresiones">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>La agrupación EXPRESIONES, es un grupo de artistas y gestores culturales de diferentes áreas cuyo objetivo es contribuir a través de estrategias didácticas, iniciativas e intervenciones sociales que enriquezcan y favorezcan el contexto de la comunidad en general, a través de metodologías y acciones que promuevan una sana convivencia, la apropiación de las artes y resolución de conflictos. </p>
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://web.facebook.com/AgrupacionExpresiones"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/bibliotecaelviejotopo/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <!-- <h5>Número de contacto:</h5>
+              <p>Cel: 314 3273 266 </p>
+              <p>Cel: 317 3122 814</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>agrupacionexpresiones@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Carrera 102 #155-50</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Virtualidad </p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarMesaArtistasSuba() {
+      Swal.fire({
+        title: 'ConfigurArte',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/18IDAC.PNG"
+              class="card-img-top" alt="mesaArtistasSuba">
+          </a>
+
+                <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <!-- <p>La agrupación EXPRESIONES, es un grupo de artistas y gestores culturales de diferentes áreas cuyo objetivo es contribuir a través de estrategias didácticas, iniciativas e intervenciones sociales que enriquezcan y favorezcan el contexto de la comunidad en general, a través de metodologías y acciones que promuevan una sana convivencia, la apropiación de las artes y resolución de conflictos. </p> -->
+            </div>
+            <div>
+              <h5>Link de Contacto:</h5>
+              
+                <a href="https://m.facebook.com/profile.php?id=110956637444984&ref=content_filter"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/bibliotecaelviejotopo/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Tel: 4732474 </p>
+              <p>Cel: 321 435 0626</p>
+              <h5>Correo Electrónico:</h5>
+              <p>caro.p.cuellar@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Cra 90 a la 91 entre calle 146 C bis y 147</p>
+              <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p>
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+      function desplegarDanielPoveda() {
+      Swal.fire({
+        title: 'Daniel Poveda',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/19IDAC.PNG"
+              class="card-img-top" alt="danielPoveda">
+          </a>
+
+                <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Artista plástico con maestro en Arte en espacio público y procesos comunitarios.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+                <!--<a href="https://m.facebook.com/profile.php?id=110956637444984&ref=content_filter"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <a href="https://www.instagram.com/dan_poveda/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div>
+              <!-- <h5>Número de contacto:</h5>
+              <p>Tel: 4732474 </p>
+              <p>Cel: 321 435 0626</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>danielpovedav@gamail.com </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 136 #94-09</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
@@ -525,6 +733,13 @@ let bibliotecaComunitariaElfuerteViejoTopo = L.marker([4.733328033767939, -74.09
     tejedoresDevida.on('click', desplegarTejedoresDeVida);
     danielArismendi.on('click', desplegarDanielArismendi);
     fundacionActitudColombia.on('click', desplegarFundacionActitudColombia);
-    bibliotecaComunitariaElfuerteViejoTopo.on('click', desplegarBlibliotecaComunitariaElFuerteViejoTopo);
+    bibliotecaComunitariaElfuerteViejoTopo.on(
+      'click',
+      desplegarBlibliotecaComunitariaElFuerteViejoTopo
+    );
+    configurArte.on('click', desplegarConfigurArte);
+    agrupacionExpresiones.on('click', desplegarAgrupacionExpresiones);
+    mesaArtistasSuba.on('click', desplegarMesaArtistasSuba);
+    danielPoveda.on('click', desplegarDanielPoveda);
   }
 }
