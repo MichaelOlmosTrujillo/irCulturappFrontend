@@ -12,7 +12,7 @@ export class MapaComponent implements OnInit {
 
   ngOnInit(): void {
     let botonCerrarInfo = document.getElementById('botonCerrarInfo');
-    var mymap = L.map('mapid').setView([4.7652, -74.0824], 12);
+    var mymap = L.map('mapid').setView([4.7652, -74.0824], 14);
     L.tileLayer(
       'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
       {
@@ -115,6 +115,18 @@ export class MapaComponent implements OnInit {
     }).addTo(mymap); 
 
  let colectivoInSitu = L.marker([4.757481667643806, -74.08851962683636], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+ let basuraVisual = L.marker([4.755870685922254, -74.0886135898738], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+ let fundacionArmoniaDiversa = L.marker([4.7372741481079945, -74.09644674569388], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+  let alSonDePacho = L.marker([4.742195045781222, -74.08523207224778], {
       icon: mapaIcono,
     }).addTo(mymap);
 
@@ -870,6 +882,144 @@ export class MapaComponent implements OnInit {
       });
     }
 
+    function desplegarBasuraVisual () {
+      Swal.fire({
+        title: 'Basura Visual',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/23IDAC.jpg"
+              class="card-img-top" alt="ColectivoInSitu">
+          </a>
+
+            <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Aqui solo va a perder su tiempo.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+                <a href="https://facebook.com/ProyectoBasuraVisual/"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/projectpeacemaker"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 312 587 7909</p>
+              <h5>Correo Electrónico:</h5>
+              <p>proyectobasuravisual@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Carrera 102 # 155-50  </p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarFundacionArmoniaDiversa () {
+      Swal.fire({
+        title: 'Fundación Armonía Diversa',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/24IDAC.jpg"
+              class="card-img-top" alt="Fundación Armonía Diversa">
+          </a>
+
+            <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Somos una fundacion sin animo de lucro que trabaja con personas con discapacidad de la localidad de suba,  fortaleciendo habilidades y destrezas artisticas como música y danzas</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+                <a href="https://facebook.com/fuardi18"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/projectpeacemaker"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 320 829 8137</p>
+              <h5>Correo Electrónico:</h5>
+              <p>fuardi18@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>cra 102 #133_59   </p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+     function desplegarAlSonDePacho () {
+      Swal.fire({
+        title: 'Al son de pacho',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/25IDAC.PNG"
+              class="card-img-top" alt="Al son de pacho ">
+          </a>
+
+             <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Música de toda clase con instrumentos andinos, cuenta con 22 años de trabajo en la localidad de SUBA.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <a href="https://www.trioalsondepacho.com/">
+                ¡Mi sitio Web! (click aquí)
+              </a>
+                <!-- <a href="https://facebook.com/fuardi18"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <!-- <a href="https://www.instagram.com/projectpeacemaker"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 312 336 2609</p>
+              <h5>Correo Electrónico:</h5>
+              <p>frangopa2223@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Carrera 93 #147-10</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
@@ -890,5 +1040,8 @@ export class MapaComponent implements OnInit {
     colectivoSubaNativa.on('click', desplegarColectivoSubaNativa);
     djpeacemakah.on('click', desplegarDjPeaceMakah);
     colectivoInSitu.on('click', desplegarColectivoInSitu);
+    basuraVisual.on('click', desplegarBasuraVisual);
+    fundacionArmoniaDiversa.on('click', desplegarFundacionArmoniaDiversa);
+    alSonDePacho.on('click', desplegarAlSonDePacho);
   }
 }
