@@ -106,6 +106,17 @@ export class MapaComponent implements OnInit {
       icon: mapaIcono,
     }).addTo(mymap);
     //let TropasInsurrectas = L.marker([4.741723, -74.0838001], { icon: mapaIcono }).addTo(mymap);
+ let colectivoSubaNativa = L.marker([4.73334941825912, -74.09538396103781], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+ let djpeacemakah = L.marker([4.724897769729154, -74.06729102244556], {
+      icon: mapaIcono,
+    }).addTo(mymap); 
+
+ let colectivoInSitu = L.marker([4.757481667643806, -74.08851962683636], {
+      icon: mapaIcono,
+    }).addTo(mymap);
 
     function desplegarSanMiguelStudio() {
       // alert('Funciona el click')
@@ -724,6 +735,141 @@ export class MapaComponent implements OnInit {
       });
     }
 
+    function desplegarColectivoSubaNativa() {
+      Swal.fire({
+        title: 'Colectivo Suba Nativa',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/20IDAC.PNG"
+              class="card-img-top" alt="ColectivoSubaNativa">
+          </a>
+
+                 <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>El colectivo Suba Nativa es una organización comunitaria sin animo de lucro que ha tenido presencia en la localidad hace más de 10 años, integrada por mujeres y hombres que desde la educación popular promovemos procesos de participación ciudadana, educación ambiental, memoria, paz, apropiación y defensa del territorio.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.facebook.com/colectivosuba.nativa.9"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+<!-- 
+                <a href="https://www.instagram.com/dan_poveda/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 350 817 9198 </p>
+              <p>Cel: 320 476 5407</p>
+              <h5>Correo Electrónico:</h5>
+              <p>colectivosubanativa@gmail.com </p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 131a #100 24 </p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarDjPeaceMakah () {
+      Swal.fire({
+        title: 'Dj peace makah ',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/21IDAC.PNG"
+              class="card-img-top" alt="Djpeacemakah">
+          </a>
+
+                  <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Promotor y creador musical </p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+                <!-- <a href="https://www.facebook.com/colectivosuba.nativa.9"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <a href="https://www.instagram.com/projectpeacemaker"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 317 384 1237 </p>
+              <h5>Correo Electrónico:</h5>
+              <p>Dharmahammer@icloud.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Cll 133#58-58</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarColectivoInSitu () {
+      Swal.fire({
+        title: 'Colectivo In Situ',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/22IDAC.PNG"
+              class="card-img-top" alt="ColectivoInSitu">
+          </a>
+
+                   <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Colectivo desde la localidad de Suba que trabaja en diferentes lenguajes artísticos con y para la comunidad. </p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+                <a href="https://www.facebook.com/ColectivoINSITU"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/projectpeacemaker"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 312 587 7909</p>
+              <h5>Correo Electrónico:</h5>
+              <p>colectivoinsitu@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Carrera 102 #155-50 </p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
@@ -741,5 +887,8 @@ export class MapaComponent implements OnInit {
     agrupacionExpresiones.on('click', desplegarAgrupacionExpresiones);
     mesaArtistasSuba.on('click', desplegarMesaArtistasSuba);
     danielPoveda.on('click', desplegarDanielPoveda);
+    colectivoSubaNativa.on('click', desplegarColectivoSubaNativa);
+    djpeacemakah.on('click', desplegarDjPeaceMakah);
+    colectivoInSitu.on('click', desplegarColectivoInSitu);
   }
 }
