@@ -12,7 +12,7 @@ export class MapaComponent implements OnInit {
 
   ngOnInit(): void {
     let botonCerrarInfo = document.getElementById('botonCerrarInfo');
-    var mymap = L.map('mapid').setView([4.7652, -74.0824], 14);
+    var mymap = L.map('mapid').setView([4.7652, -74.0824], 13);
     L.tileLayer(
       'https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}',
       {
@@ -127,6 +127,21 @@ export class MapaComponent implements OnInit {
     }).addTo(mymap);
 
   let alSonDePacho = L.marker([4.742195045781222, -74.08523207224778], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+   let eddyGriot = L.marker([4.730149824463705, -74.10225446210586], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+     let laCatarina = L.marker([4.7423061150666355, -74.08548458987384], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    let danceStudioMR = L.marker([4.724005144403717, -74.09010246103793], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    let karinaSanchez = L.marker([4.738544332070675, -74.09329586103787], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    let grupoLasFelicesDanzasDeMiPais = L.marker([4.742487026010675, -74.08317204569383], {
       icon: mapaIcono,
     }).addTo(mymap);
 
@@ -990,7 +1005,7 @@ export class MapaComponent implements OnInit {
             <div>
                <h5>Link de Contacto:</h5>
               
-               <a href="https://www.trioalsondepacho.com/">
+               <a href="https://www.trioalsondepacho.com/" target="_blank">
                 ¡Mi sitio Web! (click aquí)
               </a>
                 <!-- <a href="https://facebook.com/fuardi18"  target="_blank">
@@ -1010,6 +1025,247 @@ export class MapaComponent implements OnInit {
               <p>Carrera 93 #147-10</p>
               <!-- <h5>Dirección artística</h5>
               <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+     function desplegarEddyGriot () {
+      Swal.fire({
+        title: 'Eddy Griot',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/26IDAC.PNG"
+              class="card-img-top" alt="Eddy Griot">
+          </a>
+
+             <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Licenciado en Educación Especial. Magister en Innovaciones Sociales en educación. Musico tradicional</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://web.facebook.com/john.e.solis.7"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/projectpeacemaker"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Tel: 7182585</p>
+              <p>Cel: 310 805 6458</p>
+              <h5>Correo Electrónico:</h5>
+              <p>edy_gruezo@hotmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>calle 127 # 104a-01</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarLaCatarina () {
+      Swal.fire({
+        title: 'La Catarina',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/27IDAC.PNG"
+              class="card-img-top" alt="La Catarina">
+          </a>
+
+             <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>La Catarina es una propuesta artística que gira alrededor del té artesanal, para crear una experiencia sensorial que abarca diversos lenguajes. Nos interesa la investigación en las plantas y la cocina, y compartimos nuestros saberes a partir de los libros, títeres, talleres y, por supuesto, las mezclas de té.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <!-- <a href="https://web.facebook.com/john.e.solis.7"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 300 866 2563</p>
+              <p>Cel: 300 866 2563</p>
+              <h5>Correo Electrónico:</h5>
+              <p>catsaavedrag@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>CALLE 147 NO.93-09 APTO 407</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarDanceStudioMR () {
+      Swal.fire({
+        title: 'Dance Studio MR',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/28IDAC.PNG"
+              class="card-img-top" alt="Dance Studio MR">
+          </a>
+
+              <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Es una organización que ofrece servicios Artísticos, Culturales y Deportivos.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://www.facebook.com/dancestudiocolombia"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 319 296 6141</p>
+              <h5>Correo Electrónico:</h5>
+              <p>dancestudiolts@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 129 #91a - 19</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarKarinaSanchez () {
+      Swal.fire({
+        title: 'Karina Sánchez',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/29IDAC.PNG"
+              class="card-img-top" alt="Karina Sánchez">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Yoga Terapéutico</p>
+            </div>
+            <div>
+               <!-- <h5>Link de Contacto:</h5> -->
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <!-- <a href="https://www.facebook.com/dancestudiocolombia"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 314 388 2464</p>
+              <h5>Correo Electrónico:</h5>
+              <p>psicokarina1@hotmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Calle 137 # 99 a 18</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza fundacional de Suba</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarGrupoLasFelicesDanzasDeMiPais () {
+      Swal.fire({
+        title: 'Grupo Las felices danzas de mi país',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/30IDAC.PNG"
+              class="card-img-top" alt="Grupo Las felices danzas de mi país">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Somos un grupo de danza folclórica, entrenamos en la Casa de la Cultura de Suba desde marzo del año 2016.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://www.facebook.com/Las-Felices-Danzas-de-mi-Pa%C3%ADs-108114321097839/"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 310 202 4342</p>
+              <h5>Correo Electrónico:</h5>
+              <p>lasfelicesdanzasdemipais@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p>Cll 132 c bis # 107 b 38</p>
+              <h5>Dirección artística</h5>
+              <p>Cr 90 # 147 44</p>
 
             </div>
 
@@ -1043,5 +1299,10 @@ export class MapaComponent implements OnInit {
     basuraVisual.on('click', desplegarBasuraVisual);
     fundacionArmoniaDiversa.on('click', desplegarFundacionArmoniaDiversa);
     alSonDePacho.on('click', desplegarAlSonDePacho);
+    eddyGriot.on('click', desplegarEddyGriot);
+    laCatarina.on('click', desplegarLaCatarina);
+    danceStudioMR.on('click', desplegarDanceStudioMR);
+    karinaSanchez.on('click', desplegarKarinaSanchez);
+    grupoLasFelicesDanzasDeMiPais.on('click', desplegarGrupoLasFelicesDanzasDeMiPais);
   }
 }
