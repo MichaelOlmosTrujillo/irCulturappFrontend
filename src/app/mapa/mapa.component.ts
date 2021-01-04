@@ -144,6 +144,26 @@ export class MapaComponent implements OnInit {
     let grupoLasFelicesDanzasDeMiPais = L.marker([4.742487026010675, -74.08317204569383], {
       icon: mapaIcono,
     }).addTo(mymap);
+    let SAWWAGColombia = L.marker([4.733306649267827, -74.09539469025391], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+     let fundacionAlmaJoven = L.marker([4.745532405967719, -74.10200913258227], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+      let colectivoTanz = L.marker([4.7425565307556505, -74.09343893258227], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+       let COROTOESTUDIO = L.marker([4.733200826052319, -74.10053640374647], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+
+      let praxisPhonemes = L.marker([4.74868154988831, -74.113069083446], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+    
 
     function desplegarSanMiguelStudio() {
       // alert('Funciona el click')
@@ -1276,6 +1296,246 @@ export class MapaComponent implements OnInit {
       });
     }
 
+    function desplegarSAWWAGColombia  () {
+      Swal.fire({
+        title: 'SAW-WAG Colombia',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/31IDAC.PNG"
+              class="card-img-top" alt="SAW-WAG Colombia">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Eventos de Lucha Libre SAW-WAG</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://www.facebook.com/SawColombiaLuchaLibre/"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 310 607 9155</p>
+              <h5>Correo Electrónico:</h5>
+              <p>wilsonduster@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> Calle 131 a # 100 – 24 / Salón Comunal Barrio Aures 1.</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Cr 90 # 147 44</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarFundacionAlmaJoven  () {
+      Swal.fire({
+        title: 'Fundación Alma Joven',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/32IDAC.PNG"
+              class="card-img-top" alt="SAW-WAG Colombia">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Encargada de la biblioteca comuneros norte</p>
+            </div>
+            <div>
+             <!--  <h5>Link de Contacto:</h5> -->
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <!-- <a href="https://www.facebook.com/SawColombiaLuchaLibre/"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 310 584 0244</p>
+              <p>Tel: 4743081</p>
+              <h5>Correo Electrónico:</h5>
+              <p>fundalmajoven@hotmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> calle 141 #112-51</p>
+              <h5>Dirección artística</h5>
+              <p>calle 140b 111a 35</p>
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarColectivoTanz  () {
+      Swal.fire({
+        title: 'Colectivo Tanz',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/33IDAC.PNG"
+              class="card-img-top" alt="Colectivo Tanz">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Colectivo Tanz es una agrupación donde tenemos un proyecto de formación, sensibilización y creación para personas con talento, vocación y deseos de aprender el arte del ballet clásico para niños, jóvenes y adultos principiantes.</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://www.facebook.com/colectivotanz"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 321 441 9440</p>
+              <!-- <p>Tel: 4743081</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>tanzestudiodedanza@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> Carrera 101b #140b-47</p>
+              <h5>Dirección artística</h5>
+              <p>Centro Comercial Plaza Imperial salón de conferncias y Conjunto Nueva Suba Etapa 3 salón social </p>
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarCOROTOESTUDIO  () {
+      Swal.fire({
+        title: 'COROTOESTUDIO',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/34IDAC.PNG"
+              class="card-img-top" alt="Colectivo Tanz">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Organizacion de produccion audiovisual</p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://www.facebook.com/corotoestudiocolombia/"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 301 380 7280</p>
+              <p>Tel: 4835760</p>
+              <h5>Correo Electrónico:</h5>
+              <p>Corotorap@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> Cll 130 c bis n 104 12</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Centro Comercial Plaza Imperial salón de conferncias y Conjunto Nueva Suba Etapa 3 salón social </p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarPraxisPhonemes  () {
+      Swal.fire({
+        title: 'Praxis Phonemes',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/35IDAC.PNG"
+              class="card-img-top" alt="Praxis Phonemes">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Agrupación de Música Rap </p>
+            </div>
+            <div>
+               <h5>Link de Contacto:</h5>
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <a href="https://www.facebook.com/PRAXISPHONEMESCOLOMBIA"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a>
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 313 230 4997</p>
+              <!-- <p>Tel: 4835760</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>praxisphonemescolombia@hotmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> Carrera 136a # 142b-18</p>
+              <h5>Dirección artística</h5>
+              <p>Localidad de Suba </p>
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
     reinaldoCastro.on('click', desplegarReinaldoCastro);
@@ -1304,5 +1564,10 @@ export class MapaComponent implements OnInit {
     danceStudioMR.on('click', desplegarDanceStudioMR);
     karinaSanchez.on('click', desplegarKarinaSanchez);
     grupoLasFelicesDanzasDeMiPais.on('click', desplegarGrupoLasFelicesDanzasDeMiPais);
+    SAWWAGColombia.on('click', desplegarSAWWAGColombia);
+    fundacionAlmaJoven.on('click', desplegarFundacionAlmaJoven);
+    colectivoTanz.on('click', desplegarColectivoTanz);
+    COROTOESTUDIO.on('click', desplegarCOROTOESTUDIO);
+    praxisPhonemes.on('click', desplegarPraxisPhonemes);
   }
 }
