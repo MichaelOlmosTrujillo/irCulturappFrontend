@@ -163,7 +163,20 @@ export class MapaComponent implements OnInit {
       let praxisPhonemes = L.marker([4.74868154988831, -74.113069083446], {
       icon: mapaIcono,
     }).addTo(mymap);
+
+    let CORPORACIONCASADELACULTURADESUBA
+ = L.marker([4.74141463901186, -74.08336984569378], {
+      icon: mapaIcono,
+    }).addTo(mymap);
+       let CristianRodriguezCastroart
+ = L.marker([4.737329806140459, -74.10943997881321], {
+      icon: mapaIcono,
+    }).addTo(mymap);
     
+     let TheEnduranceMusic
+ = L.marker([4.753314895207696, -74.09645537295451], {
+      icon: mapaIcono,
+    }).addTo(mymap);
 
     function desplegarSanMiguelStudio() {
       // alert('Funciona el click')
@@ -1535,6 +1548,169 @@ export class MapaComponent implements OnInit {
         background: '#FFF4DE',
       });
     }
+    function desplegarCORPORACIONCASADELACULTURADESUBA
+  () {
+      Swal.fire({
+        title: 'CORPORACIÓN CASA DE LA CULTURA DE SUBA',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/36IDAC.PNG"
+              class="card-img-top" alt="CORPORACIÓN CASA DE LA CULTURA DE SUBA
+">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>"La Casa de la Cultura de Suba es una plataforma artística y cultural de la localidad, autogestionada por la comunidad, docentes y artistas locales. 
+
+Es una apuesta de trabajo colaborativo e incluyente, donde se realizan procesos de creación y difusión de agrupaciones, compañías, escuelas y artistas, se ofrecen talleres de artes plásticas, audiovisuales, manuales, artes escénicas, cuerpo y danza, literatura e inglés, música, terapias de sanación, entre otros.
+La Casa acoge actualmente a más de 26 colectivos y organizaciones de la localidad y brinda espacios de creación, formación y circulación permanente física y/o virtualmente. Nuestro lema es “¡El Arte Vive en Casa!"
+ </p>
+            </div>
+            <div>
+               <!-- <h5>Link de Contacto:</h5> -->
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <!-- <a href="https://www.facebook.com/PRAXISPHONEMESCOLOMBIA"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 313 498 9733
+</p>
+              <!-- <p>Tel: 4835760</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>casadelaculturadesuba@gmail.com
+</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> Carrera 90 # 147 -44
+</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Localidad de Suba </p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+    function desplegarCristianRodriguezCastroart  () {
+      Swal.fire({
+        title: 'Cristian Rodríguez Castro art',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/40IDAC.PNG"
+              class="card-img-top" alt="Cristian Rodríguez Castro art">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Soy ilustrador, animador y artista conceptual freelancer</p>
+            </div>
+            <div>
+               <!-- <h5>Link de Contacto:</h5> -->
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <!-- <a href="https://www.facebook.com/PRAXISPHONEMESCOLOMBIA"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 319 741 7851
+</p>
+              <p>Tel: 6874655
+</p>
+              <h5>Correo Electrónico:</h5>
+              <p>christianrodriguezcastroart@gmail.com
+</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> calle 130 b bis # 124-69</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza Fundacional de Suba
+</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
+
+    function desplegarTheEnduranceMusic  () {
+      Swal.fire({
+        title: 'The Endurance Music',
+        html: `<div class="card">
+          <a href="#">
+            <img
+              src="../../assets/images/agentesCulturales/DetalleAgentesCulturales/41IDAC.PNG"
+              class="card-img-top" alt="The Endurance Music">
+          </a>
+
+               <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <!-- Descripción del agente cultural -->
+              <p>Banda de Ska Rocksteady y Reggae, nacida en 2007 en la localidad de Suba.
+</p>
+            </div>
+            <div>
+               <!-- <h5>Link de Contacto:</h5> -->
+              
+               <!-- <a href="https://www.trioalsondepacho.com/" target="_blank">
+                ¡Mi sitio Web! (click aquí)
+              </a> -->
+                <!-- <a href="https://www.facebook.com/PRAXISPHONEMESCOLOMBIA"  target="_blank">
+                  <i class="fab fa-facebook"></i> 
+                </a> -->
+
+                <!-- <a href="https://www.instagram.com/telacatarina/"  target="_blank">
+                  <i class="fab fa-instagram"></i>
+                </a> -->
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 311 887 6992
+</p>
+              <!-- <p>Tel: 6874655
+</p> -->
+              <h5>Correo Electrónico:</h5>
+              <p>tesb.co@gmail.com</p>
+              <h5>Dirección Administrativa:</h5>
+              <p> Carrera 109 A # 151 - 09
+</p>
+              <!-- <h5>Dirección artística</h5>
+              <p>Plaza Fundacional de Suba
+</p> -->
+
+            </div>
+
+          </div>
+        </div>`,
+        confirmButtonText: 'Cerrar',
+        background: '#FFF4DE',
+      });
+    }
 
     sanMiguelStudio.on('click', desplegarSanMiguelStudio);
     escuelaPopularManoAbierta.on('click', desplegarEscuelaPopularManoAbierta);
@@ -1569,5 +1745,8 @@ export class MapaComponent implements OnInit {
     colectivoTanz.on('click', desplegarColectivoTanz);
     COROTOESTUDIO.on('click', desplegarCOROTOESTUDIO);
     praxisPhonemes.on('click', desplegarPraxisPhonemes);
+    CORPORACIONCASADELACULTURADESUBA. on('click', desplegarCORPORACIONCASADELACULTURADESUBA);
+    CristianRodriguezCastroart.on('click', desplegarCristianRodriguezCastroart);
+    TheEnduranceMusic.on('click', desplegarTheEnduranceMusic);
   }
 }
