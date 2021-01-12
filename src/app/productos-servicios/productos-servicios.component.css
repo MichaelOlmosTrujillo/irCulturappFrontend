@@ -12,19 +12,17 @@
     box-shadow: 5px 5px 20px;
     cursor: pointer;
     width: 250px;
-    height: 160px;
+    height: 200px;
     transition: transform 1s;
     margin: 30px;
-    border-radius: 10px;
+    
 }
-
 .card:hover {
     transform: scale(1.2);
 }
 .card-body{
-    text-align: center;
+    
     background-color: #F4C178;
-    border-radius: 10px;
 }
 .card-body a{
     color: #7A3E48;
@@ -38,6 +36,9 @@ width: 70px;
 height: 20px;
 display: flex;
 align-items: center;
+margin: 0px 3px;
+padding: 0px 3px;
+justify-content: center;
 }
 .card-body button:hover{
     background-color: #da8906;
@@ -45,18 +46,6 @@ align-items: center;
 .card-body a {
     text-decoration: none;
     color: #7A3E48;
-}
-.card-bodyMedioAmbiente{
-    background-color: #3D3342;
-}
-.card-bibliotecasMR{
-    background-color: #57bb06;
-}
-.card-artesEscenicas{
-    background-color: brown;
-}
-.card-lenguajesArtisticos{
-    background-color: cadetblue;
 }
 .card img {
     width: 250px;
@@ -73,7 +62,3 @@ align-items: center;
     color: rgb(202, 136, 49);
   
 }
-.medioAmbiente{
-    background-color: #3D3342;
-}
-
