@@ -10,14 +10,22 @@ export class CalendarioComponent implements OnInit {
 
   ngOnInit(): void {
     this.renderizarCalendario();
+    
   }
 
   fecha = new Date();
+  lanzamientoIrCulturApp = new Date('December 4, 2020 00:00:00');
+  
+  // mostrarConsola(){
+  //   console.log(this.lanzamientoIrCulturApp.getFullYear, this.lanzamientoIrCulturApp.getMonth + " mes y año del lanzamiento de la app")
+  // }
 
   // Renderizar el calendario
   renderizarCalendario() {
     // "fecha.setMonth(3);" Especifica que el mes actual sea dado manualmente
     // Se establece para determinar el primer día del mes.
+    let diaLanzamiento = this.lanzamientoIrCulturApp.getDate();
+    console.log(diaLanzamiento + " día de lanzamiento de irCulturApp");   
     this.fecha.setDate(1);
     // Indice del primer día del mes actual
     const indicePrimerDia = this.fecha.getDay();
@@ -88,12 +96,10 @@ export class CalendarioComponent implements OnInit {
     }
 
     //Subrayar el día actual del mes actual
-
-    for (let i = 1; i <= ultimoDia; i++) {
-      if (
-        (i === new Date().getDate() || i === (new Date().getDate()) + 1 ) &&
+//(i === new Date().getDate() || i === (new Date().getDate()) + 1 ) &&
         this.fecha.getMonth() === new Date().getMonth()
-      ) {
+    for (let i = 1; i <= ultimoDia; i++) {
+      if ( i === diaLanzamiento && this.lanzamientoIrCulturApp.getMonth() == this.fecha.getMonth() && this.fecha.getFullYear() == this.lanzamientoIrCulturApp.getFullYear()  ) {
         dias += `
         <div class = "hoy posicionRelativa">
         ${i}
