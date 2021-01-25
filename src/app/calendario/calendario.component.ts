@@ -10,12 +10,16 @@ export class CalendarioComponent implements OnInit {
 
   ngOnInit(): void {
     this.renderizarCalendario();
-    
   }
 
   fecha = new Date();
+  //Lanzamiento de irCulturApp
   lanzamientoIrCulturApp = new Date('December 4, 2020 00:00:00');
-  
+  //Huerta Comunitaria Angelita
+  huertaCominutariaAngelita = new Date('December 20, 2020');
+  //Huerta Comunitaria Angelita Velitas
+  huertaCominutariaAngelitaVelitas = new Date('December 7, 2020');
+
   // mostrarConsola(){
   //   console.log(this.lanzamientoIrCulturApp.getFullYear, this.lanzamientoIrCulturApp.getMonth + " mes y año del lanzamiento de la app")
   // }
@@ -25,7 +29,9 @@ export class CalendarioComponent implements OnInit {
     // "fecha.setMonth(3);" Especifica que el mes actual sea dado manualmente
     // Se establece para determinar el primer día del mes.
     let diaLanzamiento = this.lanzamientoIrCulturApp.getDate();
-    console.log(diaLanzamiento + " día de lanzamiento de irCulturApp");   
+    let diaHuertaComunitariaAngelita = this.huertaCominutariaAngelita.getDate();
+    let diaHuertaCominutariaAngelitaVelitas = this.huertaCominutariaAngelitaVelitas.getDate();
+    // console.log(diaLanzamiento + " día de lanzamiento de irCulturApp");
     this.fecha.setDate(1);
     // Indice del primer día del mes actual
     const indicePrimerDia = this.fecha.getDay();
@@ -47,7 +53,7 @@ export class CalendarioComponent implements OnInit {
       day: 'numeric',
     };
     const diasDelMes = document.getElementById('dias');
-    console.log(diasDelMes);
+    // console.log(diasDelMes);
     //Último día del mes actual
     const ultimoDia = new Date(
       this.fecha.getFullYear(),
@@ -96,10 +102,14 @@ export class CalendarioComponent implements OnInit {
     }
 
     //Subrayar el día actual del mes actual
-//(i === new Date().getDate() || i === (new Date().getDate()) + 1 ) &&
-        this.fecha.getMonth() === new Date().getMonth()
+    //(i === new Date().getDate() || i === (new Date().getDate()) + 1 ) &&
+    this.fecha.getMonth() === new Date().getMonth();
     for (let i = 1; i <= ultimoDia; i++) {
-      if ( i === diaLanzamiento && this.lanzamientoIrCulturApp.getMonth() == this.fecha.getMonth() && this.fecha.getFullYear() == this.lanzamientoIrCulturApp.getFullYear()  ) {
+      if (
+        i === diaLanzamiento &&
+        this.lanzamientoIrCulturApp.getMonth() == this.fecha.getMonth() &&
+        this.fecha.getFullYear() == this.lanzamientoIrCulturApp.getFullYear()
+      ) {
         dias += `
         <div class = "hoy posicionRelativa">
         ${i}
@@ -108,13 +118,40 @@ export class CalendarioComponent implements OnInit {
         </div>
         </div>
         `;
-      } else {
+      } else if (
+        i === diaHuertaComunitariaAngelita &&
+        this.huertaCominutariaAngelita.getMonth() == this.fecha.getMonth() &&
+        this.fecha.getFullYear() == this.huertaCominutariaAngelita.getFullYear()
+      ) {
+        dias += `
+        <div class = "hoy posicionRelativa">
+        ${i}
+        <div data-toggle= "modal" data-target = "#huertaCominutariaAngelitaEvent" class = "posicionAbsoluta">
+           <img src="../../assets/images/agentesCulturales/PortadaAgentesCulturales/8LAC.PNG" class="logoEventoAgendario" alt="huertaComunitariaAngelita">
+        </div>
+        </div>
+        `;
+      }else if (
+        i === diaHuertaCominutariaAngelitaVelitas &&
+        this.huertaCominutariaAngelitaVelitas.getMonth() == this.fecha.getMonth() &&
+        this.fecha.getFullYear() == this.huertaCominutariaAngelitaVelitas.getFullYear()
+      ) {
+        dias += `
+        <div class = "hoy posicionRelativa">
+        ${i}
+        <div data-toggle= "modal" data-target = "#huertaComunitariaAngelitaVelitas" class = "posicionAbsoluta">
+           <img src="../../assets/images/agentesCulturales/PortadaAgentesCulturales/8LAC.PNG" class="logoEventoAgendario" alt="huertaComunitariaAngelitaVelitas">
+        </div>
+        </div>
+        `;
+      }
+      
+      else {
         dias += `<div>
         ${i}
         </div>
         `;
       }
-      
     }
 
     //Últimos días del mes actual
@@ -143,5 +180,4 @@ export class CalendarioComponent implements OnInit {
     this.fecha.setMonth(this.fecha.getMonth() + 1);
     this.renderizarCalendario();
   }
- 
 }

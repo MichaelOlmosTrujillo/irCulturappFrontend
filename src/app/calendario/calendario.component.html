@@ -1,13 +1,28 @@
-<div class="contenedor modal fade" id="agendario" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
+<div
+  class="contenedor modal fade"
+  id="agendario"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
   <div class="modal-dialog modal-lg" role="document">
     <div class="calendario modal-content">
-      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+      <button
+        type="button"
+     
+        data-dismiss="modal"
+        aria-label="Close"
+      >
         <span aria-hidden="true">&times;</span>
       </button>
-      <div class="modal-body">
+      <div class="modal-body-calendario">
         <div class="mes">
-          <i class="fas fa-angle-left prev " id="mesAnterior" (click)="mesAnterior()"></i>
+          <i
+            class="fas fa-angle-left prev"
+            id="mesAnterior"
+            (click)="mesAnterior()"
+          ></i>
           <div class="fecha">
             <h1 id="mes"></h1>
             <p id="fechaActual"></p>
@@ -23,42 +38,223 @@
           <div>Vi</div>
           <div>Sá</div>
         </div>
-        <div class="dias" id="dias">
-
-        </div>
+        <div class="dias" id="dias"></div>
       </div>
     </div>
     <div class="modal-footer">
-      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-secondary" data-dismiss="modal">
+        Cerrar
+      </button>
     </div>
   </div>
 </div>
 
 <!-- Modal del evento del 5 de dic -->
 
-<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true"
-  id='evento5Dic'>
+<div
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  id="evento5Dic"
+>
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Inauguración IrCulturApp</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Inauguración IrCulturApp
+        </h5>
+        <button
+          type="button"
+         class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
         <div class="card">
           <a href="#">
-            <img src="../../../assets/images/invitacion5Dic.jpg" class="card-img-top"
-              alt="invitacion5Dic">
-          </a>  
+            <img
+              src="../../../assets/images/invitacion5Dic.jpg"
+              class="card-img-top"
+              alt="invitacion5Dic"
+            />
+          </a>
         </div>
-
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
         </div>
       </div>
     </div>
   </div>
 </div>
 <!-- 1. Final del modal del centro cultural San Miguel Studio -->
+<!-- Eventos en el calendario -->
+
+<!-- Evento HuertaComunitaria Angelita -->
+<!-- 8. Agente Cultural Huerta Comunitaria Angelita -->
+
+<div
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  id="huertaCominutariaAngelitaEvent"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Huerta Comunitaria Angelita
+        </h5>
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <a href="#">
+            <img
+              src="../../../assets/images/agentesCulturales/DetalleAgentesCulturales/8IDAC.PNG"
+              class="card-img-top"
+              alt="HuertaComunitariaAngelita"
+            />
+          </a>
+
+          <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <h6>Entrega de regalos a los niños y niñas participes de la organización</h6>
+              <p>
+                
+Evento enfocado a la infancia por su participación constante y permanente.
+              </p>
+            </div>
+            <div>
+              <!-- <h5>Link de Contacto:</h5> -->
+              <!-- <a
+                href="https://www.instagram.com/huertaangelitac/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a> -->
+              <!-- <a
+                href="https://web.facebook.com/Huerta-Comunitaria-la-Angelita-109309803828654"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i> </a
+              > -->
+              <br /><br />
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 3154020349</p>
+              <h5>Correo Electrónico:</h5>
+              <p>huertacomunitariaangelita@gmail.com</p>
+              <!-- <h5>Dirección</h5>
+              <p>Calle 139 #127A</p> -->
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 8. Fin del agente cultural Huerta Comunitaria Angelita -->
+
+<!-- 8.1. Agente Cultural Huerta Comunitaria Angelita -->
+
+<div
+  class="modal fade"
+  tabindex="-1"
+  role="dialog"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+  id="huertaComunitariaAngelitaVelitas"
+>
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">
+          Huerta Comunitaria Angelita
+        </h5>
+
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="card">
+          <a href="#">
+            <img
+              src="../../../assets/images/agentesCulturales/DetalleAgentesCulturales/8IDAC.PNG"
+              class="card-img-top"
+              alt="HuertaComunitariaAngelita"
+            />
+          </a>
+
+          <div class="card-body d-flex justify-content-between flex-column">
+            <div>
+              <h6>Velitas de la Tierra</h6>
+              <p>Vamos a hacer lo que siempre hacemos en Velitas...
+Vamos a dar un recorrido por nuestra huerta y te guiaremos a una maravillosa galeria que organizamos para mostrarte todo sobre nuestras plantas en la huerta.
+              </p>
+            </div>
+            <div>
+              <!-- <h5>Link de Contacto:</h5> -->
+              <!-- <a
+                href="https://www.instagram.com/huertaangelitac/"
+                target="_blank"
+              >
+                <i class="fab fa-instagram"></i>
+              </a> -->
+              <!-- <a
+                href="https://web.facebook.com/Huerta-Comunitaria-la-Angelita-109309803828654"
+                target="_blank"
+              >
+                <i class="fab fa-facebook-f"></i> </a
+              > -->
+              <br /><br />
+            </div>
+            <div>
+              <h5>Número de contacto:</h5>
+              <p>Cel: 3154020349</p>
+              <h5>Correo Electrónico:</h5>
+              <p>huertacomunitariaangelita@gmail.com</p>
+              <h5>Lugar</h5>
+              <p>Calle 139 #127A</p>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 8.1. Fin del agente cultural Huerta Comunitaria Angelita -->
+<!-- Fin Evento HuertaComunitaria Angelita -->
