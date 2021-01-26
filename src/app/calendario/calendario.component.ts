@@ -19,6 +19,7 @@ export class CalendarioComponent implements OnInit {
   huertaCominutariaAngelita = new Date('December 20, 2020');
   //Huerta Comunitaria Angelita Velitas
   huertaCominutariaAngelitaVelitas = new Date('December 7, 2020');
+  ColectivoSubaNativaEvento = new Date('December 5, 2020');
 
   // mostrarConsola(){
   //   console.log(this.lanzamientoIrCulturApp.getFullYear, this.lanzamientoIrCulturApp.getMonth + " mes y año del lanzamiento de la app")
@@ -31,6 +32,7 @@ export class CalendarioComponent implements OnInit {
     let diaLanzamiento = this.lanzamientoIrCulturApp.getDate();
     let diaHuertaComunitariaAngelita = this.huertaCominutariaAngelita.getDate();
     let diaHuertaCominutariaAngelitaVelitas = this.huertaCominutariaAngelitaVelitas.getDate();
+    let diaColectivoSubaNativaEvento = this.ColectivoSubaNativaEvento.getDate();
     // console.log(diaLanzamiento + " día de lanzamiento de irCulturApp");
     this.fecha.setDate(1);
     // Indice del primer día del mes actual
@@ -141,6 +143,19 @@ export class CalendarioComponent implements OnInit {
         ${i}
         <div data-toggle= "modal" data-target = "#huertaComunitariaAngelitaVelitas" class = "posicionAbsoluta">
            <img src="../../assets/images/agentesCulturales/PortadaAgentesCulturales/8LAC.PNG" class="logoEventoAgendario" alt="huertaComunitariaAngelitaVelitas">
+        </div>
+        </div>
+        `;
+      } else if (
+        i === diaColectivoSubaNativaEvento &&
+        this.ColectivoSubaNativaEvento.getMonth() == this.fecha.getMonth() &&
+        this.fecha.getFullYear() == this.ColectivoSubaNativaEvento.getFullYear()
+      ) {
+        dias += `
+        <div class = "hoy posicionRelativa">
+        ${i}
+        <div data-toggle= "modal" data-target= "#ColectivoSubaNativaEvento5Dic" class = "posicionAbsoluta">
+           <img src="../../assets/images/agentesCulturales/PortadaAgentesCulturales/20LAC.PNG" class="logoEventoAgendario" alt="ColectivoSubaNativaEvento">
         </div>
         </div>
         `;

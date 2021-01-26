@@ -1,7 +1,7 @@
 
 
 body {
-  background-color: #FFF4DE;
+  background-color: #FFF4DE !important;
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -23,7 +23,7 @@ body {
 }
 .calendario{
     width: 100%;
-    height: 52rem;
+    /* height: 52rem; */
     background-color: #222227;
     box-shadow: 0.5rem 3rem rgba(0, 0, 0, 0.4);
     max-width: 100%;
